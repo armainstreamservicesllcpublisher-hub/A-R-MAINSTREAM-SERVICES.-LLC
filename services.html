@@ -5,40 +5,57 @@
 <title>Services - A&R Mainstream Services</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body { margin:0; font-family:Arial; background:#f3f4f6; color:#1f2937; }
-header { background:#1d4ed8; color:white; padding:20px; display:flex; align-items:center; gap:15px; }
-header img { width:55px; height:55px; background:#ffffff33; border-radius:6px; }
-nav a { color:white; margin-left:20px; text-decoration:none; font-weight:bold; }
-.section { padding:40px 20px; max-width:900px; margin:auto; }
-.service-box {
-  background:white; padding:20px; margin:15px 0; border-radius:8px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+body { margin:0; font-family:'Segoe UI', Arial; background:#f8fafc; color:#1e293b; }
+
+nav {
+  background:#1d4ed8; padding:15px 25px; display:flex; align-items:center;
+  justify-content:space-between; position:sticky; top:0; z-index:10;
 }
-footer { background:#1d4ed8; color:white; text-align:center; padding:15px; margin-top:40px; }
+nav img { height:50px; width:50px; background:#ffffff33; border-radius:6px; }
+nav a { color:white; margin-left:25px; text-decoration:none; font-weight:600; }
+
+.section { padding:50px 20px; max-width:1100px; margin:auto; }
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+}
+.card {
+  background:white; padding:25px; border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  font-size:1.1rem;
+  font-weight:500;
+}
+
+footer {
+  background:#1d4ed8; color:white; text-align:center; padding:20px; margin-top:40px;
+}
 </style>
 </head>
 <body>
 
-<header>
+<nav>
   <img src="logo.png">
-  <div style="flex-grow:1;"><strong>A&R Mainstream Services, LLC</strong></div>
-  <nav>
+  <div>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  </div>
+</nav>
 
 <div class="section">
   <h1>Our Services</h1>
 
-  <div class="service-box">General Handyman Work</div>
-  <div class="service-box">Home Repairs & Maintenance</div>
-  <div class="service-box">Painting & Minor Renovations</div>
-  <div class="service-box">Furniture Assembly & Installations</div>
-  <div class="service-box">Pressure Cleaning</div>
-  <div class="service-box">TV Mounting & Fixtures</div>
+  <div class="grid">
+    <div class="card">General Handyman Work</div>
+    <div class="card">Home Repairs & Maintenance</div>
+    <div class="card">Painting & Minor Renovations</div>
+    <div class="card">Furniture Assembly & Installations</div>
+    <div class="card">Pressure Cleaning</div>
+    <div class="card">TV Mounting & Fixtures</div>
+  </div>
 </div>
 
 <footer>
@@ -47,3 +64,5 @@ footer { background:#1d4ed8; color:white; text-align:center; padding:15px; margi
 
 </body>
 </html>
+
+
