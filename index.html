@@ -5,79 +5,92 @@
 <title>A&R Mainstream Services, LLC</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+/* GLOBAL */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f3f4f6;
-  color: #1f2937;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
 }
-header {
+
+/* NAVBAR */
+nav {
   background: #1d4ed8;
-  color: white;
-  padding: 20px;
+  padding: 15px 25px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-header img {
-  width: 55px;
-  height: 55px;
+nav img {
+  height: 50px;
+  width: 50px;
   background: #ffffff33;
   border-radius: 6px;
 }
 nav a {
   color: white;
-  margin-left: 20px;
+  margin-left: 25px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
 }
+
+/* HERO */
 .hero {
-  padding: 60px 20px;
+  padding: 100px 20px;
   text-align: center;
-  background: white;
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  color: white;
 }
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* SECTION */
 .section {
-  padding: 40px 20px;
-  max-width: 900px;
+  padding: 50px 20px;
+  max-width: 1100px;
   margin: auto;
 }
+
+/* FOOTER */
 footer {
   background: #1d4ed8;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   margin-top: 40px;
 }
 </style>
 </head>
 <body>
 
-<header>
+<nav>
   <img src="logo.png" alt="Logo Placeholder">
-  <div style="flex-grow:1;">
-    <strong>A&R Mainstream Services, LLC</strong>
-  </div>
-  <nav>
+  <div>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  </div>
+</nav>
 
 <div class="hero">
-  <h1>Professional Handyman & Home Services</h1>
-  <p>Serving Miami • Broward • West Palm</p>
+  <h1>A&R Mainstream Services</h1>
+  <p>Professional Handyman & Home Repair — Miami • Broward • West Palm</p>
 </div>
 
 <div class="section">
   <h2>Welcome</h2>
   <p>
-    A&R Mainstream Services provides reliable, affordable, and high‑quality home repair and maintenance.
+    We provide reliable, affordable, and high‑quality home repair and maintenance.
     From small fixes to full home improvements, we’ve got you covered.
   </p>
 </div>
